@@ -22,8 +22,11 @@ body {
     margin: 0 auto;
     height: 100vh;
     overflow: hidden;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
 }
 
+/* BACKGROUND SHAPE */
 body::before {
     content: "";
     display: block;
@@ -44,7 +47,7 @@ header {
     align-items: center;
     width: 100%;
     height: 150px;
-    max-width: 1200px;
+    max-width: 1440px;
     margin: 0 auto;
 }
 
@@ -90,18 +93,32 @@ main {
     align-items: center;
 }
 
-.image {
+.image,
+.wrapper {
     width: 50%;
     overflow: hidden;
 }
 
 .image img {
-    /* margin-left: 50px; */
     width: 138%;
     overflow: hidden;
-    /* width: 150%; */
     position: relative;
 }
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0 0 0 auto;
+    max-width: 720px;
+    border: 1px solid black;
+}
+
+.cta {
+    display: flex;
+}
+
+
 
 
 /* FOOTER */
