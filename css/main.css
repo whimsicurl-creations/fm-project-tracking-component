@@ -1,3 +1,4 @@
+/* GLOBAL STYLES */
 :root {
     --vdkblue: hsl(230, 29%, 20%);
     --dkgrayblue: hsl(230, 11%, 40%);
@@ -18,7 +19,53 @@ h1, h2, h3, h4, h5, h6 {
 body {
     font-family: 'Barlow', sans-serif;
     color: var(--dkgrayblue);
+    margin: 0 auto;
 }
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header img {
+    max-height: 32px;
+}
+
+/* NAVIGATION */
+nav {
+    align-self: end;
+    width: 40%;
+}
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 0;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li a {
+    font-family: 'Barlow Condensed', sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--vdkblue);
+    font-weight: 700;
+}
+
+nav ul li:last-child a {
+    color: var(--grayblue);
+}
+
 
 /* FOOTER */
 .attribution { 
