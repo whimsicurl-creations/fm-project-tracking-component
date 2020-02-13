@@ -1,0 +1,32 @@
+:root {
+    --vdkblue: hsl(230, 29%, 20%);
+    --dkgrayblue: hsl(230, 11%, 40%);
+    --grayblue: hsl(231, 7%, 65%);
+    --ltgrayblue: hsl(207, 33%, 95%);
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 18px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Barlow Condensed', sans-serif;
+    color: var(--vdkblue);
+}
+
+body {
+    font-family: 'Barlow', sans-serif;
+    color: var(--dkgrayblue);
+}
+
+/* FOOTER */
+.attribution { 
+    font-size: 12px; 
+    text-align: center; 
+    color: var(--dkgrayblue);
+}
+
+.attribution a { 
+    color: var(--vdkblue); 
+}
